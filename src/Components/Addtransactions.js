@@ -4,14 +4,14 @@ export function Addtransactions() {
     return (
         <div>
             <h3>Add New Transactions</h3>
-            <form>
+            <form className="form-transaction">
             <label for="transactions">Transactions</label>
             <br></br>
             <input type="text" placeholder="Enter Transaction Type" />
             <br></br>
             <label for="amount">Amount</label>
             <br></br>
-            <p>(-ve indicates expense, +ve indicates income)</p>
+            <sub>(-ve indicates expense, +ve indicates income)</sub>
             <br></br>
             <input type="number" placeholder="Enter amount" />
             <br></br>

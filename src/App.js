@@ -9,7 +9,7 @@ import {Addtransactions} from "./Components/Addtransactions"
 function App() {
 
   return (
-    <div>
+    <div className="container">
       <Header />
       <Expensetracking />
       <IncomeExpense />

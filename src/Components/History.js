@@ -2,23 +2,18 @@ import React from "react";
 
 export function History() {
     return (
-        <div>
+        <div className="history">
             <div>
-            <ul>
-                <div className="list-style">
+                <h3>History</h3>
+            <ul className="list-style">
                 <li>
-                    <p>
                         <span>Cash</span>
-                        <span>500</span>
-                    </p>
+                        <span>$500</span>
                 </li>
                 <li>
-                    <p>
                         <span>Debit</span>
-                        <span>200</span>
-                    </p>
+                        <span>$200</span>
                 </li>
-                </div>
             </ul>
             </div>
         </div>
