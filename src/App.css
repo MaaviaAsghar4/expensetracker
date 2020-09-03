@@ -1,5 +1,7 @@
-.text-align {
-    text-align: center;
-    color: royalblue;
-    background-color: silver;
+.flexing {
+    display: flex;
+}
+
+.list-style {
+    list-style-type: none;
 }

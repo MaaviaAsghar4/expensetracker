@@ -1,10 +1,20 @@
 import React from 'react';
 import './App.css';
+import {Header} from "./Components/Header"
+import {Expensetracking} from "./Components/Expensetracking"
+import {IncomeExpense} from "./Components/IncomeExpense"
+import {History} from "./Components/History"
+import {Addtransactions} from "./Components/Addtransactions"
 
 function App() {
+
   return (
-    <div className="App">
-     <h1 className="text-align">Hello World from Maavia Asghar</h1>
+    <div>
+      <Header />
+      <Expensetracking />
+      <IncomeExpense />
+      <History />
+      <Addtransactions />
     </div>
   );
 }
