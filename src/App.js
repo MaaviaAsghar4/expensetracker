@@ -6,16 +6,21 @@ import {IncomeExpense} from "./Components/IncomeExpense"
 import {History} from "./Components/History"
 import {Addtransactions} from "./Components/Addtransactions"
 
+import {GlobalProvider} from "./context/GlobalState"
+
+
 function App() {
 
   return (
-    <div className="container">
+    <GlobalProvider>
+    <div>
       <Header />
       <Expensetracking />
       <IncomeExpense />
       <History />
       <Addtransactions />
     </div>
+    </GlobalProvider>
   );
 }
 

@@ -23,7 +23,7 @@ h2{
 
 .expense-tracking{
     background-color: #388ad1;
-    color: white;
+    color: #f7f7f7;
     padding: 5px;
     box-shadow: 0 0 10px gray;
 }
@@ -50,9 +50,11 @@ h3{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
-    padding: 10px 10px;
-    background-color: #ffffff;
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f7f7f7;
+    color: #388ad1;
     box-shadow: 0 0 10px gray;
 }
 
@@ -88,5 +90,24 @@ h3{
     border: 0.1rem solid #56a5eb;
     text-decoration: none;
     color: #56a5eb;
-    background-color: white;
+    background-color: #f7f7f7;
+}
+
+.del-btn{
+    opacity: 0;
+    pointer-events: none;
+    border: none;
+    background-color: #56a5eb;
+    border-radius: 0.5rem;
+    padding: 2px 5px 2px 5px;
+    position: absolute;
+    top: 30%;
+    right: 3%;
+    transform: translate(100%,-100%);
+    color: #f7f7f7;
+}
+
+.list-style li:hover .del-btn {
+    opacity: 1;
+    pointer-events: all;
 }

@@ -1,19 +1,22 @@
-import React from "react";
+import React, {useContext} from "react";
+import {StateContext} from "../context/GlobalState";
 
 export function History() {
+
+    const {transactions} = useContext(StateContext);
+
+
     return (
         <div className="history">
             <div>
                 <h3>History</h3>
             <ul className="list-style">
-                <li>
-                        <span>Cash</span>
-                        <span>$500</span>
+                {transactions.map(transaction => (<li key={transaction.id}>
+                    {transaction.transaction}
+                    <span>{transaction.amount<0 ? "-": "+"}${Math.abs(transaction.amount)}</span>
+                    <button className="del-btn">x</button>
                 </li>
-                <li>
-                        <span>Debit</span>
-                        <span>$200</span>
-                </li>
+                ))}
             </ul>
             </div>
         </div>
