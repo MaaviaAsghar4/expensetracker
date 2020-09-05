@@ -3,6 +3,7 @@ import {StateContext} from "../context/GlobalState";
 
 export function History() {
 
+    const {deleteTransaction} = useContext(StateContext);
     const {transactions} = useContext(StateContext);
 
 
@@ -14,7 +15,7 @@ export function History() {
                 {transactions.map(transaction => (<li key={transaction.id}>
                     {transaction.transaction}
                     <span>{transaction.amount<0 ? "-": "+"}${Math.abs(transaction.amount)}</span>
-                    <button className="del-btn">x</button>
+                    <button onClick={()=>deleteTransaction(transaction.id)} className="del-btn">x</button>
                 </li>
                 ))}
             </ul>
