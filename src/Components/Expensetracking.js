@@ -13,7 +13,7 @@ export function Expensetracking() {
     return (
     <div className="expense-tracking">
         <h2>Current Balance</h2>
-        <h2>{sign}${(total)}</h2>
+        <h2>{sign}${Math.abs(total)}</h2>
     </div>
     );
 }
